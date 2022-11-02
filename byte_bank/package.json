@@ -1,0 +1,12 @@
+{
+  "name": "byte_bank",
+  "version": "1.0.0",
+  "description": "**Aprendemos**",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Levy",
+  "license": "ISC",
+  "type": "module"
+}
