@@ -10,7 +10,6 @@ const contaCarlos = new ContaCorrente();
 contaCarlos.agencia = 4002;
 contaCarlos.cliente = cliente_1;
 contaCarlos.depositar(250);
-// console.log(contaCarlos);
 
 const cliente_2 = new Cliente();
 cliente_2.nome = "Rodrigo";

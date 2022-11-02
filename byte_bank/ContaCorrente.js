@@ -1,19 +1,37 @@
+import { Cliente } from "./Cliente.js";
+
 export class ContaCorrente {
     agencia;
-    cliente;
 
-    _saldo = 0;
+    #cliente;
+    #saldo = 0;
 
+    // acessadores das propriedades
+    set cliente(valor) {
+        if(valor instanceof Cliente) {
+            this.#cliente = valor;
+        }
+    }
+
+    get cliente() {
+        return this.#cliente;
+    }
+
+    get saldo() {
+        return this.#saldo;
+    }
+
+    // métodos
     sacar(valor) {
-        if(this._saldo >= valor) {
-            this._saldo -= valor;
+        if(this.#saldo >= valor) {
+            this.#saldo -= valor;
             return valor;
         } 
     }
 
     depositar(valor) {
         if(valor <= 0) return;
-        console.log("Valor Depositado: " + (this._saldo += valor));
+        this.#saldo += valor;
     }
 
     transferir(valor, contaDestino) {
