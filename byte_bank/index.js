@@ -11,14 +11,13 @@ class ContaCorrente {
     sacar(valor) {
         if(this._saldo >= valor) {
             this._saldo -= valor;
+            return valor;
         } 
     }
 
     depositar(valor) {
-        if(valor > 0) {
-            this._saldo += valor;
-            console.log(this._saldo);
-        }
+        if(valor <= 0) return;
+        console.log("Valor Depositado: " + (this._saldo += valor));
     }
 }
 
@@ -30,11 +29,13 @@ cliente_1.rg = 2521015289;
 const contaCarlos = new ContaCorrente();
 contaCarlos.agencia = 4002;
 
-console.log("Saldo do cliente: " + contaCarlos.saldo);
+console.log("Saldo do cliente: " + contaCarlos._saldo);
 console.log("Agencia do cliente: " + contaCarlos.agencia);
 
-contaCarlos.sacar(50);
 contaCarlos.depositar(100);
+
+const valorSacado = contaCarlos.sacar(50);
+console.log("Valor Sacado: " + valorSacado);
 
 console.log(contaCarlos);
 console.log("Saldo atual é: " + contaCarlos._saldo);
