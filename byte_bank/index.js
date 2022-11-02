@@ -1,25 +1,40 @@
 class Cliente {
     nome;
     cpf;
-    agencia;
-    saldo;
     rg;
 }
 
-const cliente_1 = new Cliente();
-const cliente_2 = new Cliente();
+class ContaCorrente {
+    agencia;
+    _saldo = 0;
 
+    sacar(valor) {
+        if(this._saldo >= valor) {
+            this._saldo -= valor;
+        } 
+    }
+
+    depositar(valor) {
+        if(valor > 0) {
+            this._saldo += valor;
+            console.log(this._saldo);
+        }
+    }
+}
+
+const cliente_1 = new Cliente();
 cliente_1.nome = "Carlos";
 cliente_1.cpf = 468978421;
-cliente_1.agencia = 2005;
-cliente_1.saldo = 0;
 cliente_1.rg = 2521015289;
 
-cliente_2.nome = "Marcos";
-cliente_2.cpf = 761988471;
-cliente_2.agencia = 2005;
-cliente_2.saldo = 0;
-cliente_2.rg = 59684712893;
+const contaCarlos = new ContaCorrente();
+contaCarlos.agencia = 4002;
 
-console.log(cliente_1);
-console.log(cliente_2);
+console.log("Saldo do cliente: " + contaCarlos.saldo);
+console.log("Agencia do cliente: " + contaCarlos.agencia);
+
+contaCarlos.sacar(50);
+contaCarlos.depositar(100);
+
+console.log(contaCarlos);
+console.log("Saldo atual é: " + contaCarlos._saldo);
