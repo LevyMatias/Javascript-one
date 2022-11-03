@@ -15,5 +15,6 @@ Projeto desenvolvido no curso de validação de formulários da plataforma alura
    - Como baixar e rodar o browser-sync
    - Como mostrar a mensagem de erro diretamente no HTML
    - Como customizar as mensagens de erro de validação
-
-
+   - A validar cpf com números repetidos
+   - A matemática por trás da validação de um CPF
+   - Recursão de função
