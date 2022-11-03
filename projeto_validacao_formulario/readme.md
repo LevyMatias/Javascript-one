@@ -1,6 +1,10 @@
-# Projeto Doguito Petshop
+# Projeto Doguito Petshop 🐕
 
 Projeto desenvolvido no curso de validação de formulários da plataforma alura do programa One.
+
+![Formulário](./assets/github/doguito.png)
+
+Desenvolvemos um formulário para cadastro onde usamos validações para campos de nome, email, senha, cpf, cep, etc. E criamos regex para cpf e cep, também  ultilizamos api viaCEP para preencher os outros campos automáticamente.
 
 **Aprendemos:**
 
@@ -21,3 +25,17 @@ Projeto desenvolvido no curso de validação de formulários da plataforma alura
    - Outra estrutura de regex para a pré validação do CEP
    - Como fazer uma requisição para a API da ViaCEP
    - Preencher outros campos do formulário com a resposta da API da ViaCEP
+   - Como adicionar máscara monetária para o campo de preço.
+
+ ## 🚀 Tecnologias
+
+ - HTML e CSS
+ - Javascript e Json
+ - Fetch API
+ - [SimpleMaskMoney](https://github.com/codermarcos/simple-mask-money)
+
+ ## 📝 Autor
+
+ - [Levy](https://www.linkedin.com/in/levy-matias/)
+
+---
