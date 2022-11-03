@@ -18,3 +18,6 @@ Projeto desenvolvido no curso de validação de formulários da plataforma alura
    - A validar cpf com números repetidos
    - A matemática por trás da validação de um CPF
    - Recursão de função
+   - Outra estrutura de regex para a pré validação do CEP
+   - Como fazer uma requisição para a API da ViaCEP
+   - Preencher outros campos do formulário com a resposta da API da ViaCEP
